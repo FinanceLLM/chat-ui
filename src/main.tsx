@@ -4,11 +4,13 @@ import App from "./App.tsx";
 import "./index.css";
 
 import { GlobalStore } from "./store";
+import Example from "./Example.tsx";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
     <GlobalStore>
-      <App />
+      {/* <App /> */}
+      <Example />
     </GlobalStore>
   </React.StrictMode>
 );
