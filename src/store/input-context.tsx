@@ -34,7 +34,7 @@ export const useInputContext = (): [string, DispatchType] => {
   const state = useContext(InputContext);
   const dispatch = useContext(InputDispatchContext);
 
-  if (!state || !dispatch) {
+  if (!dispatch) {
     throw new Error("Cannot find InputContext");
   }
 
