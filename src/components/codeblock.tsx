@@ -17,7 +17,7 @@ const CodeBlock: React.FC<ICodeBlock> = ({ code, lang }) => {
   }, [code, lang]);
 
   return (
-    <div className="group relative my-4 rounded-lg">
+    <div className="group relative my-4 rounded-l scroll">
       <pre className="scrollbar-custom overflow-auto px-5 scrollbar-thumb-gray-500 hover:scrollbar-thumb-gray-400 dark:scrollbar-thumb-white/10 dark:hover:scrollbar-thumb-white/20">
         <code
           className={`language-${lang}`}
