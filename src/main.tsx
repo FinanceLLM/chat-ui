@@ -1,16 +1,12 @@
-import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
+import { RouterProvider } from "react-router-dom";
 import "./index.css";
 
 import { GlobalStore } from "./store";
-import Example from "./Example.tsx";
+import { router } from "./router";
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
-  <React.StrictMode>
-    <GlobalStore>
-      {/* <App /> */}
-      <Example />
-    </GlobalStore>
-  </React.StrictMode>
+  <GlobalStore>
+    <RouterProvider router={router} />
+  </GlobalStore>
 );
